@@ -1,0 +1,152 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           pl-lib
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/pl-lib#readme>
+homepage:       https://github.com/githubuser/pl-lib#readme
+bug-reports:    https://github.com/githubuser/pl-lib/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2024 Author name here
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/pl-lib
+
+library
+  exposed-modules:
+      Example.LC
+      Lib
+      Polysemy.BiTC
+      Polysemy.BiTC.Binding
+      Util
+  other-modules:
+      Paths_pl_lib
+  autogen-modules:
+      Paths_pl_lib
+  hs-source-dirs:
+      src
+  default-extensions:
+      RankNTypes
+      TemplateHaskell
+      LambdaCase
+      ImpredicativeTypes
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      FlexibleContexts
+      FlexibleInstances
+      UndecidableInstances
+      GADTs
+      ScopedTypeVariables
+      DataKinds
+      PolyKinds
+      RankNTypes
+      TypeApplications
+      TypeOperators
+      TypeFamilies
+      OverloadedRecordDot
+      MultiParamTypeClasses
+      BlockArguments
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -fplugin=Polysemy.Plugin
+  build-depends:
+      base >=4.7 && <5
+    , comonad
+    , data-fix
+    , free
+    , polysemy
+    , polysemy-plugin
+  default-language: Haskell2010
+
+executable pl-lib-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_pl_lib
+  autogen-modules:
+      Paths_pl_lib
+  hs-source-dirs:
+      app
+  default-extensions:
+      RankNTypes
+      TemplateHaskell
+      LambdaCase
+      ImpredicativeTypes
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      FlexibleContexts
+      FlexibleInstances
+      UndecidableInstances
+      GADTs
+      ScopedTypeVariables
+      DataKinds
+      PolyKinds
+      RankNTypes
+      TypeApplications
+      TypeOperators
+      TypeFamilies
+      OverloadedRecordDot
+      MultiParamTypeClasses
+      BlockArguments
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -fplugin=Polysemy.Plugin -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , comonad
+    , data-fix
+    , free
+    , pl-lib
+    , polysemy
+    , polysemy-plugin
+  default-language: Haskell2010
+
+test-suite pl-lib-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_pl_lib
+  autogen-modules:
+      Paths_pl_lib
+  hs-source-dirs:
+      test
+  default-extensions:
+      RankNTypes
+      TemplateHaskell
+      LambdaCase
+      ImpredicativeTypes
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      FlexibleContexts
+      FlexibleInstances
+      UndecidableInstances
+      GADTs
+      ScopedTypeVariables
+      DataKinds
+      PolyKinds
+      RankNTypes
+      TypeApplications
+      TypeOperators
+      TypeFamilies
+      OverloadedRecordDot
+      MultiParamTypeClasses
+      BlockArguments
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -fplugin=Polysemy.Plugin -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , comonad
+    , data-fix
+    , free
+    , pl-lib
+    , polysemy
+    , polysemy-plugin
+  default-language: Haskell2010
